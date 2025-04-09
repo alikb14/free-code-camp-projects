@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Freecode Survey</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Freecode certification project</h1>
+        <p id="description">I'm taking this project to show my skills</p>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#" id="survey-form">
+                <fieldset class="first-fieldset">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" id="name" placeholder="Enter Your name" required>
+
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Email" required>
+
+                    <label for="age"> Age <span id="optional">(optional)</span></label>
+                    <input type="text" id="age" placeholder="Age">
+
+                    <label id="number-label" for="number">Enter your number</label>
+                    <input type="tell" id="number" minlength="11" maxlength="11" placeholder="ex: 09131231234" required>
+                </fieldset>
+                <fieldset>
+                    <label for="dropdown">Which option best describes your current role?</label>
+                    <select name="role selector" id="dropdown">
+                        <option value="role" selected>Select current role</option>
+                        <option value="role">Student</option>
+                        <option value="role">Full Time Job</option>
+                        <option value="role">Full Time Learner</option>
+                        <option value="role">Prefer not to say</option>
+                        <option value="role">other</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label for="definitely"><input value="Definitely" checked id="definitely" name="recommend"
+                            type="radio">Definitely</label>
+                    <label for="maybe"><input value="v" id="maybe" name="recommend" type="radio">Maybe</label>
+                    <label for="not"><input value="Not sure" id="not" name="recommend" type="radio">Not sure</label>
+                </fieldset>
+                <fieldset>
+                    <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+                    <select name="fav-feature" id="fav-feature">
+                        <option value="feature">Select an option</option>
+                        <option value="feature">Challenges</option>
+                        <option value="feature">Projects</option>
+                        <option value="feature">Community</option>
+                        <option value="feature">Open Source</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <p>What would you like to see improved? (Check all that apply)</p>
+                    <label for="one"><input value="Front-end Projects" id="one" type="checkbox">Front-end Projects</label>
+                    <label for="two"><input value="Back-end Projects" id="two" type="checkbox">Back-end Projects</label>
+                    <label for="three"><input value="Data Visualization" id="thre" type="checkbox">Data Visualization</label>
+                    <label for="four"><input value="Challenges" id="four" type="checkbox">Challenges</label>
+                    <label for="five"><input value="Open Source Community" id="five" type="checkbox">Open Source Community</label>
+                    <label for="six"><input value="Gitter help rooms" id="six" type="checkbox">Gitter help rooms</label>
+                    <label for="seven"><input value="Videos" id="seven" type="checkbox">Videos</label>
+                    <label for="eight"><input value="City Meetups" id="eight" type="checkbox">City Meetups</label>
+                    <label for="nine"><input value="Wiki" id="nine" type="checkbox">Wiki</label>
+                    <label for="ten"><input value="Forum" id="ten" type="checkbox">Forum</label>
+                    <label for="eleven"><input value="Additional Courses" id="eleven" type="checkbox">Additional Courses</label>
+                </fieldset>
+                <fieldset>
+                    <label for="comment"><label id="twelve" for="comment">Any comments or suggestions?</label>
+                        <textarea name="comment" id="comment" placeholder="Enter your comment hre..."></textarea>
+                </fieldset>
+                <fieldset>
+                    <input id="submit" type="submit">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
